@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+  }
+
+  .logo {    
+      width: 25%;
+  }
+
+  .header {
+    padding: 30px;
+    text-align: center;
+    background: black;
+    border-color: black;
+    border-width: 10px;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #D42D25;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #1f1d1d;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .topnav a:hover {
+    background-color: rgb(177, 38, 31);
+    color: black;
+  }
+  
+  
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+  }
+  
+  .fakeimg {
+    background-color: rgb(196, 196, 196);
+    width: 100%;
+    padding: 0px;
+  }
+  
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .footer {
+    padding: 5px;
+    text-align: left;
+    background-color: #D42D25;
+    margin-top: 20px;
+  }
+  
+  /*800px wide*/
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+ /*400px wide*/
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  .altfakeimg {
+    background-color: #aaaaaa00;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .altcard {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  #id2{
+    font-weight: bolder;
+    color: red
+}
+
+#mc{
+  margin-left: 46%;
+}
+
+#others{
+  margin-left: 48%;
+}
+
+#demo{
+  text-align: center;
+  font-size: 60px;
+}

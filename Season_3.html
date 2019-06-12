@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="Main_CSS.css">
+    <title>Stranger Things</title>
+    <style>
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <a href="index.html#">
+        <img class="logo" src="Pictures/Stranger_things.png" alt="Stranger Things Logo.">
+    </a> 
+</div>
+
+<div class="topnav">
+  <a href="Main_Characters.html">Main Characters</a>
+  <a href="Season_3.html">Season 3</a>
+  <a href="Socials.html">Socials</a>
+  <p id="others">Season 3 Page</p>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>A new chapter.</h2>
+      <h5>The official date of Season 3 of Stranger things will be July 4, 2019.</h5>
+      <div>
+        <img class="fakeimg" style="height:200px;" src="Pictures/SEASON%203.png" alt="Season 3">
+      </div>
+      <p>Link to official trailer:<span> <a href="https://www.youtube.com/watch?v=YEG3bmU_WaI" target="_blank">https://www.youtube.com/watch?v=YEG3bmU_WaI</a></span>.</p>
+      <p>The upcoming season of Stranger Things is going to blow the other 2 seasons out of the water. All the actors work making loads of money, with $200,000.00 or more per episode. In November during the year of 2016 it was said that the Duffer Brothers, (original show creators), had already started planing out the potential new season. At the time there was no confirmation of a new season. Almost a year later, the Duffer Brothers confirmed the new season would be coming. This season has taken about 3 years to create. If there is to be a season 4, how long would that take? A total of 8 episodes of about an hour long are to be aired. The names of the episodes have been released and you can find them <span> <a href="https://www.imdb.com/title/tt4574334/episodes?season=3" target="_blank">here</a></span>. One summer can change everything.<span><a href="https://twitter.com/Stranger_Things/status/1135912841356013569" target="_blank">.</a></span>. LIVE COUNTDOWN TILL RELEASE OF SEASON 3:</p>
+<span>
+      <p id="demo"></p>
+<script>
+var countDownDate = new Date("Jul 4, 2019 00:00:00").getTime();
+
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
+    
+  var distance = countDownDate - now;
+    
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "SEASON 3 HAS BEEN RELEASED! ";
+  }
+}, 1000);
+</script>
+</span>
+    </div>
+</div>
+<div class="footer">
+    <h2>©Xander Gasparlin, 2019</h2>
+    <audio autoplay loop>
+      <source src="Music/Stranger-Thing-theme-Song.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+</div> 
+
+</body>
+</html>
